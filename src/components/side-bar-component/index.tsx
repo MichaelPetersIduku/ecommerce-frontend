@@ -177,6 +177,11 @@ const SideBarComponent: FC<SideBarProps> = ({ modal }) => {
           Load Sell Request Script
         </Button>
       </Typography>
+      <Typography className={cs.loadIphoneContainer} component="div">
+        <div>
+          <a style={{color: "white"}} href="https://docs.google.com/spreadsheets/d/1StAjRtad7E1KeuEV0-QNUCxt6QeBtj-G7YSQRwSZTmk">View Spreadsheet Data</a>
+        </div>
+      </Typography>
     </Typography>
   );
 };
