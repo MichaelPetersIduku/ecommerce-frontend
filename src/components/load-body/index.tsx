@@ -78,7 +78,7 @@ const LoadBody = () => {
       const response = await fetch(
         `https://api-ezewholesale.herokuapp.com/api/v1/products?request=buyRequest&page=${
           page + 1
-        }&limit=20`,
+        }&limit=300`,
         {
           headers: {
             Authorization: "Basic anVkanNkc3Vfc29zOTpsZG85ZHNqbnM5OA==",
@@ -108,7 +108,7 @@ const LoadBody = () => {
       const response = await fetch(
         `https://api-ezewholesale.herokuapp.com/api/v1/products?request=sellRequest&page=${
           page + 1
-        }&limit=20`,
+        }&limit=300`,
         {
           headers: {
             Authorization: "Basic anVkanNkc3Vfc29zOTpsZG85ZHNqbnM5OA==",
