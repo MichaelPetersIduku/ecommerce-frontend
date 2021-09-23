@@ -76,7 +76,7 @@ const LoadBody = () => {
     // setRequest("sellRequest");
     try {
       const response = await fetch(
-        `http://localhost:4321/api/v1/products?request=buyRequest&page=${
+        `https://api-ezewholesale.herokuapp.com/api/v1/products?request=buyRequest&page=${
           page + 1
         }&limit=20`,
         {
@@ -106,7 +106,7 @@ const LoadBody = () => {
     // setRequest("sellRequest");
     try {
       const response = await fetch(
-        `http://localhost:4321/api/v1/products?request=sellRequest&page=${
+        `https://api-ezewholesale.herokuapp.com/api/v1/products?request=sellRequest&page=${
           page + 1
         }&limit=20`,
         {
