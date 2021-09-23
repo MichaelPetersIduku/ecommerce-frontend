@@ -11,7 +11,6 @@ import { Colors, LoadIphoneEnum, useGlobalStore } from "../../util/store";
 import SliderComponent from "../slider-component";
 import Storage from "../storage";
 import RadioButton from "../radio-buttons";
-import Themes from "../themes";
 
 import { actionCreator, ActionTypes } from "../../util/action";
 
@@ -146,6 +145,7 @@ const SideBarComponent: FC<SideBarProps> = ({ modal }) => {
         </ListItem>
         {categoryTags.map((item, i) => (
           <ListItem
+          style={{borderBottom: "2px solid"}}
             button
             className={cs.listCategory}
             key={i}
@@ -158,11 +158,6 @@ const SideBarComponent: FC<SideBarProps> = ({ modal }) => {
       <SliderComponent />
       <Storage title="Storage">
         <RadioButton />
-      </Storage>
-      <Storage title="Set theme">
-        <Typography className={cs.themes} component="div">
-          <Themes />
-        </Typography>
       </Storage>
       <Typography className={cs.loadIphoneContainer} component="div">
         <Button
